@@ -1,0 +1,91 @@
+Bab 1
+pengantar
+
+PyGTK 2.0 adalah satu set modul Python yang menyediakan antarmuka Python untuk GTK + 2.x. sepanjang
+dokumen ini PyGTK mengacu pada versi 2.x dari PyGTK dan GTK dan GTK + lihat 2.x yang
+versi GTK +. Situs web utama untuk PyGTK adalah www.pygtk.org. Penulis utama PyGTK adalah:
+
+• James Henstridge james@daa.com.au
+
+yang dibantu oleh para pengembang terdaftar dalam file PENULIS dalam distribusi PyGTK dan
+PyGTK masyarakat.
+
+Python merupakan extensible, bahasa pemrograman ditafsirkan berorientasi objek yang disediakan dengan
+seperangkat modul menyediakan akses ke sejumlah besar layanan sistem operasi, layanan internet
+(seperti HTML, XML, FTP, dll), grafis (termasuk OpenGL, TK, dll), fungsi penanganan string, surat
+layanan (IMAP, SMTP, POP3, dll), multimedia (audio, JPEG) dan layanan kriptografi. tambahan
+ada banyak modul lain yang tersedia dari pihak ketiga yang menyediakan banyak layanan lainnya. Python
+berlisensi di bawah persyaratan mirip dengan lisensi LGPL dan tersedia untuk Linux, Unix, Windows dan Mac-
+sistem operasi Intosh. Informasi lebih lanjut tentang Python tersedia di www.python.org. Penulis Python utama adalah:
+
+• Guido van Rossum guido@python.org
+
+GTK (GIMP Toolkit) adalah library untuk membuat antarmuka pengguna grafis. Hal ini berlisensi menggunakan LGPL
+lisensi, sehingga Anda dapat mengembangkan perangkat lunak terbuka, perangkat lunak bebas, atau perangkat lunak tidak bebas bahkan komersial menggunakan
+GTK tanpa harus menghabiskan apa pun untuk lisensi atau royalti.
+
+Ini disebut GIMP toolkit karena pada awalnya ditulis untuk mengembangkan Gambar GNU Manip-
+modulasi Program (GIMP), tapi GTK kini telah digunakan dalam sejumlah besar proyek perangkat lunak, termasuk
+GNU Jaringan Object Model Environment (GNOME) proyek. GTK dibangun di atas GDK (GIMP
+Menggambar Kit) yang pada dasarnya adalah bungkus sekitar fungsi tingkat rendah untuk mengakses mendasari
+fungsi windowing (Xlib dalam kasus sistem jendela X). Para penulis utama GTK adalah:
+
+• Peter Mattis petm@xcf.berkeley.edu
+• Spencer Kimball spencer@xcf.berkeley.edu
+• Josh MacDonald jmacd@xcf.berkeley.edu
+
+GTK saat ini dikelola oleh:
+• Owen Taylor otaylor@redhat.com
+• Tim Janik timj@gtk.org
+
+GTK dasarnya sebuah aplikasi berorientasi antarmuka programmer objek (API). Meski ditulis
+sepenuhnya dalam C, ini diterapkan dengan menggunakan gagasan kelas dan fungsi callback (pointer ke fungsi
+tions).
+
+Ada juga merupakan komponen ketiga yang disebut GLib yang berisi beberapa pengganti untuk beberapa standar
+panggilan, serta beberapa fungsi tambahan untuk menangani daftar terkait, dll Fungsi pengganti
+digunakan untuk meningkatkan portabilitas GTK, seperti beberapa fungsi diimplementasikan di sini tidak tersedia atau
+adalah tidak standar pada Unix lain seperti g_strerror (). Beberapa juga mengandung perangkat tambahan untuk libc yang
+versi, seperti g_malloc yang telah meningkatkan utilitas debugging.
+
+Dalam versi 2.0, GLib telah mengambil sistem tipe yang membentuk landasan untuk kelas GTK ini
+hierarki, sistem sinyal yang digunakan di seluruh GTK, API benang yang abstrak yang berbeda
+benang API asli dari berbagai platform dan pusat untuk memuat modul.
+Sebagai komponen terakhir, GTK menggunakan perpustakaan Pango untuk output teks internasionalisasi.
+Tutorial ini menjelaskan antarmuka Python untuk GTK + dan didasarkan pada GTK + 2.0 Tutorial ditulis
+oleh Tony Gale dan Ian Main. Tutorial ini mencoba untuk mendokumentasikan sebanyak mungkin dari PyGTK, tetapi
+tidak berarti lengkap.
+
+Tutorial ini mengasumsikan beberapa pemahaman tentang Python, dan bagaimana membuat dan menjalankan program Python.
+Jika Anda tidak akrab dengan Python, silakan baca Tutorial Python pertama. Tutorial ini tidak bertanggung
+pemahaman tentang GTK, jika Anda belajar PyGTK untuk belajar GTK, silakan komentar pada bagaimana Anda menemukan
+tutorial ini, dan apa yang Anda mengalami kesulitan dengan. Tutorial ini tidak menjelaskan bagaimana untuk mengkompilasi atau menginstal
+Python, GTK + atau PyGTK.
+
+Tutorial ini didasarkan pada:
+
+• GTK + 2.0 melalui GTK + 2.4
+• Python 2.2
+• PyGTK 2.0 melalui PyGTK 2.4
+
+Contoh-contoh yang ditulis dan diuji pada sistem RedHat 9.0.
+Dokumen ini adalah "work in progress". Silahkan lihat untuk update pada www.pygtk.org.
+Aku sangat ingin mendengar dari setiap masalah yang Anda belajar PyGTK dari dokumen ini,
+dan akan menghargai masukan untuk bagaimana dapat diperbaiki. Silakan lihat bagian Berkontribusi untuk
+Informasi lebih lanjut. Jika Anda menemukan bug silahkan melaporkan bug di bugzilla.gnome.org terhadap pygtk
+proyek. Informasi di www.pygtk.org tentang Bugzilla dapat membantu.
+
+The PyGTK 2.0 Reference Manual tersedia di http://www.pygtk.org/reference.html. Ini menggambarkan
+secara rinci kelas PyGTK.
+
+Situs web PyGTK (www.pygtk.org) mengandung sumber informasi lainnya yang berguna untuk belajar tentang PyGTK
+termasuk link ke FAQ luas dan artikel lainnya dan tutorial dan maillist aktif dan IRC
+channel (lihat www.pygtk.org untuk rincian)
+
+1.1
+menjelajahi PyGTK
+Johan Dahlin telah menulis sebuah program Python kecil (pygtkconsole.py) yang berjalan pada Linux dan memungkinkan
+eksplorasi interaktif PyGTK. Program ini menyediakan antarmuka interaktif Python interpreter seperti
+yang berkomunikasi dengan proses anak yang mengeksekusi perintah yang dimasukkan. Modul PyGTK adalah
+dimuat secara default. Sebuah sesi contoh sederhana adalah:
+
