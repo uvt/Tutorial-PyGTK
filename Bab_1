@@ -2,26 +2,29 @@ Bab 1
 pengantar
 
 PyGTK 2.0 adalah satu set modul Python yang menyediakan antarmuka Python untuk GTK + 2.x. Sepanjang
-dokumen ini PyGTK mengacu pada versi 2.x dari PyGTK, GTK, dan GTK +. Situs web utama PyGTK adalah www.pygtk.org. Penulis utama PyGTK adalah:
+dokumen ini PyGTK mengacu pada versi 2.x dari PyGTK, GTK, dan GTK +. Situs web utama PyGTK adalah www.pygtk.org. 
+Penulis utama PyGTK adalah:
 
 • James Henstridge <james@daa.com.au>
 
 Dia dibantu para pengembang yang terdaftar dalam berkas AUTHORS dalam distribusi PyGTK.
 
-Python dapat diperluas, ditafsirkan berorientasi objek, dan disediakan dengan
-seperangkat modul ke sejumlah besar layanan sistem operasi, layanan internet
-(seperti HTML, XML, FTP, dll), grafis (termasuk OpenGL, TK, dll), fungsi penanganan string, surat
-layanan (IMAP, SMTP, POP3, dll), multimedia (audio, JPEG), dan layanan kriptografi. Ada banyak modul lain yang tersedia dari pihak ketiga. Python
-berlisensi di bawah persyaratan, mirip lisensi LGPL, dan tersedia untuk Linux, Unix, Windows, dan MacIntosh. Informasi lebih lanjut tentang Python tersedia di www.python.org. Penulis Python utama adalah:
+Python dapat menjangkau sejumlah besar layanan sistem operasi, layanan internet (seperti HTML, XML, FTP, dll), grafis 
+(termasuk OpenGL, TK, dll), fungsi penanganan string, layanan surat (IMAP, SMTP, POP3, dll), multimedia (audio, JPEG), 
+dan layanan kriptografi. Ada banyak modul lain yang tersedia dari pihak ketiga. Python berlisensi di bawah persyaratan, 
+mirip lisensi LGPL, dan tersedia untuk Linux, Unix, Windows, dan MacIntosh. Informasi lebih lanjut tentang Python 
+tersedia di www.python.org. Penulis Python utama adalah:
 
 • Guido van Rossum <guido@python.org>
 
-GTK (GIMP Toolkit) adalah pustaka untuk membuat antarmuka pengguna grafis, berlisensi LGPL, sehingga Anda dapat mengembangkan perangkat lunak terbuka, perangkat lunak bebas, atau perangkat lunak tidak bebas bahkan komersial menggunakan
-GTK tanpa harus membayar lisensi atau royalti.
+GTK (GIMP Toolkit) adalah pustaka untuk membuat antarmuka pengguna grafis, berlisensi LGPL, sehingga Anda dapat 
+mengembangkan perangkat lunak terbuka, perangkat lunak bebas, atau perangkat lunak tidak bebas bahkan komersial 
+menggunakan GTK tanpa harus membayar lisensi atau royalti.
 
-Ini disebut perlengkapan GIMP karena pada awalnya ditulis untuk mengembangkan program perekayasa gambar "GNU GNU Image Manipulation Program" (GIMP), tapi GTK kini telah digunakan dalam sejumlah besar proyek perangkat lunak, termasuk proyek
-"GNU Network Object Model Environment" (GNOME). GTK dibangun di atas GDK (GIMP Drawing Kit) yang pada dasarnya adalah bungkus sekitar fungsi tingkat rendah untuk mengakses mendasari
-fungsi windowing (Xlib dalam kasus sistem jendela X). Para penulis utama GTK adalah:
+Ini disebut perlengkapan GIMP karena pada awalnya ditulis untuk mengembangkan program perekayasa gambar 
+"GNU GNU Image Manipulation Program" (GIMP), tapi GTK kini telah digunakan dalam sejumlah besar proyek perangkat lunak, 
+termasuk proyek "GNU Network Object Model Environment" (GNOME). GTK dibangun di atas GDK (GIMP Drawing Kit) yang pada 
+dasarnya berfungsi seperti jendela (Xlib sistem jendela X). Para penulis utama GTK adalah:
 
 • Peter Mattis <petm@xcf.berkeley.edu>
 • Spencer Kimball <spencer@xcf.berkeley.edu>
@@ -32,7 +35,7 @@ GTK saat ini dikelola:
 • Tim Janik <timj@gtk.org>
 
 GTK dasarnya sebuah "Application Programmers Interface" (API). Meski ditulis
-sepenuhnya dalam C, ini diterapkan dengan menggunakan gagasan kelas dan fungsi callback (pointer ke fungsi).
+sepenuhnya dalam bahasa C, ini diterapkan dengan menggunakan gagasan kelas dan fungsi callback (pointer ke fungsi).
 
 Ada juga merupakan komponen ketiga yang disebut GLib yang berisi beberapa pengganti untuk beberapa standar
 panggilan, serta beberapa fungsi tambahan untuk menangani daftar terkait, dll Fungsi pengganti
