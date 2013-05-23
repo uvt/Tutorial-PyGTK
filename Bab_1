@@ -1,5 +1,5 @@
-##Bab 1
-##pengantar
+Bab 1
+Pengantar
 
 PyGTK 2.0 adalah satu set modul Python yang menyediakan antarmuka Python untuk GTK + 2.x. Sepanjang
 dokumen ini PyGTK mengacu pada versi 2.x dari PyGTK, GTK, dan GTK +. Situs web utama PyGTK adalah www.pygtk.org. 
@@ -50,10 +50,9 @@ Tutorial ini menjelaskan antarmuka Python untuk GTK + dan didasarkan pada GTK + 
 oleh Tony Gale dan Ian Main. Tutorial ini mencoba mendokumentasikan sebanyak mungkin PyGTK, tetapi tidak berarti lengkap.
 
 Tutorial ini mengasumsikan beberapa pemahaman tentang Python, dan bagaimana membuat dan menjalankan program Python.
-Jika Anda tidak akrab dengan Python, silakan baca Tutorial Python pertama. Tutorial ini tidak bertanggung
-pemahaman tentang GTK. Jika Anda belajar PyGTK untuk belajar GTK, silakan komentar pada bagaimana Anda menemukan
-tutorial ini, dan apa kesulitan Anda. Tutorial ini tidak menjelaskan bagaimana untuk mengkompilasi atau menginstal
-Python, GTK +, atau PyGTK.
+Jika Anda tidak akrab dengan Python, silakan baca Tutorial Python pertama. Tutorial ini tidak memberikan pemahaman 
+tentang GTK. Jika Anda belajar PyGTK untuk belajar GTK, silakan komentar pada tempat Anda menemukan tutorial ini dan apa 
+kesulitan Anda. Tutorial ini tidak menjelaskan bagaimana mengompilasi atau menginstal Python, GTK +, atau PyGTK.
 
 Tutorial ini didasarkan pada:
 
@@ -61,19 +60,16 @@ Tutorial ini didasarkan pada:
 • Python 2.2
 • PyGTK 2.0 melalui PyGTK 2.4
 
-Contoh-contoh yang ditulis dan diuji pada sistem RedHat 9.0.
-Dokumen ini adalah "work in progress". Silahkan lihat untuk update pada www.pygtk.org.
-Aku sangat ingin mendengar dari setiap masalah yang Anda belajar PyGTK dari dokumen ini,
-dan akan menghargai masukan untuk bagaimana dapat diperbaiki. Silakan lihat bagian Berkontribusi untuk
-Informasi lebih lanjut. Jika Anda menemukan bug silahkan melaporkan bug di bugzilla.gnome.org terhadap pygtk
-proyek. Informasi di www.pygtk.org tentang Bugzilla dapat membantu.
+Contoh-contoh yang ditulis dan diuji pada sistem RedHat 9.0. Dokumen ini adalah "work in progress". Silahkan lihat update 
+pada www.pygtk.org. Aku sangat ingin mendengar dari setiap masalah yang Anda belajar PyGTK dari dokumen ini,
+dan akan menghargai masukan untuk bagaimana dapat diperbaiki. Silakan lihat bagian berkontribusi untuk informasi lebih lanjut.
+Jika Anda menemukan bug silahkan melaporkan bug di bugzilla.gnome.org terhadap proyek pygtk. Informasi di www.pygtk.org 
+tentang Bugzilla dapat membantu.
 
-The PyGTK 2.0 Reference Manual tersedia di http://www.pygtk.org/reference.html. Ini menggambarkan
-secara rinci kelas PyGTK.
+The PyGTK 2.0 Reference Manual tersedia di http://www.pygtk.org/reference.html. Ini menggambarkan secara rinci kelas PyGTK.
 
-Situs web PyGTK (www.pygtk.org) mengandung sumber informasi lainnya yang berguna untuk belajar tentang PyGTK
-termasuk link ke FAQ luas dan artikel lainnya dan tutorial dan maillist aktif dan IRC
-channel (lihat www.pygtk.org untuk rincian)
+Situs web PyGTK (www.pygtk.org) mengandung sumber informasi lainnya yang berguna untuk belajar tentang PyGTK termasuk link 
+ke FAQ dan artikel lainnya dan tutorial dan maillist aktif dan IRC channel (lihat www.pygtk.org untuk rincian)
 
 1.1
 menjelajahi PyGTK
