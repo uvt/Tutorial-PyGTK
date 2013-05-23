@@ -1,5 +1,5 @@
-Bab 1
-pengantar
+##Bab 1
+##pengantar
 
 PyGTK 2.0 adalah satu set modul Python yang menyediakan antarmuka Python untuk GTK + 2.x. Sepanjang
 dokumen ini PyGTK mengacu pada versi 2.x dari PyGTK, GTK, dan GTK +. Situs web utama PyGTK adalah www.pygtk.org. 
@@ -7,13 +7,13 @@ Penulis utama PyGTK adalah:
 
 • James Henstridge <james@daa.com.au>
 
-Dia dibantu para pengembang yang terdaftar dalam berkas AUTHORS dalam distribusi PyGTK.
+Dia dibantu para pengembang yang terdaftar dalam berkas AUTHORS distribusi PyGTK.
 
 Python dapat menjangkau sejumlah besar layanan sistem operasi, layanan internet (seperti HTML, XML, FTP, dll), grafis 
 (termasuk OpenGL, TK, dll), fungsi penanganan string, layanan surat (IMAP, SMTP, POP3, dll), multimedia (audio, JPEG), 
 dan layanan kriptografi. Ada banyak modul lain yang tersedia dari pihak ketiga. Python berlisensi di bawah persyaratan, 
 mirip lisensi LGPL, dan tersedia untuk Linux, Unix, Windows, dan MacIntosh. Informasi lebih lanjut tentang Python 
-tersedia di www.python.org. Penulis Python utama adalah:
+tersedia di www.python.org. Penulis utama Python adalah:
 
 • Guido van Rossum <guido@python.org>
 
@@ -21,8 +21,8 @@ GTK (GIMP Toolkit) adalah pustaka untuk membuat antarmuka pengguna grafis, berli
 mengembangkan perangkat lunak terbuka, perangkat lunak bebas, atau perangkat lunak tidak bebas bahkan komersial 
 menggunakan GTK tanpa harus membayar lisensi atau royalti.
 
-Ini disebut perlengkapan GIMP karena pada awalnya ditulis untuk mengembangkan program perekayasa gambar 
-"GNU GNU Image Manipulation Program" (GIMP), tapi GTK kini telah digunakan dalam sejumlah besar proyek perangkat lunak, 
+GTK disebut perlengkapan GIMP karena pada awalnya ditulis untuk mengembangkan program perekayasa gambar 
+"GNU GNU Image Manipulation Program" (GIMP), tetapi GTK kini telah digunakan dalam sejumlah besar proyek perangkat lunak, 
 termasuk proyek "GNU Network Object Model Environment" (GNOME). GTK dibangun di atas GDK (GIMP Drawing Kit) yang pada 
 dasarnya berfungsi seperti jendela (Xlib sistem jendela X). Para penulis utama GTK adalah:
 
@@ -34,28 +34,26 @@ GTK saat ini dikelola:
 • Owen Taylor <otaylor@redhat.com>
 • Tim Janik <timj@gtk.org>
 
-GTK dasarnya sebuah "Application Programmers Interface" (API). Meski ditulis
-sepenuhnya dalam bahasa C, ini diterapkan dengan menggunakan gagasan kelas dan fungsi callback (pointer ke fungsi).
+GTK pada dasarnya adalah sebuah "Application Programmers Interface" (API). Meski ditulis
+sepenuhnya dalam bahasa C, GTK dapat diterapkan dengan menggunakan gagasan kelas dan fungsi callback (pointer ke fungsi).
 
-Ada juga merupakan komponen ketiga yang disebut GLib yang berisi beberapa pengganti untuk beberapa standar
-panggilan, serta beberapa fungsi tambahan untuk menangani daftar terkait, dll Fungsi pengganti
-digunakan untuk meningkatkan portabilitas GTK, seperti beberapa fungsi diimplementasikan di sini tidak tersedia atau
-adalah tidak standar pada Unix lain seperti g_strerror (). Beberapa juga mengandung perangkat tambahan untuk libc yang
-versi, seperti g_malloc yang telah meningkatkan utilitas debugging.
+Selain itu ada komponen ketiga yang disebut GLib, berisi beberapa pengganti untuk beberapa standar
+panggilan, serta beberapa fungsi tambahan untuk menangani daftar terkait. Fungsi pengganti digunakan untuk meningkatkan 
+portabilitas GTK, seperti beberapa fungsi diimplementasikan di sini tidak tersedia atau tidak standar pada Unix, seperti 
+g_strerror (). Beberapa juga mengandung perangkat tambahan untuk versi libc, seperti g_malloc yang telah meningkatkan 
+utilitas debugging.
 
-Dalam versi 2.0, GLib telah mengambil sistem tipe yang membentuk landasan untuk kelas GTK ini
-hierarki, sistem sinyal yang digunakan di seluruh GTK, API benang yang abstrak yang berbeda
-benang API asli dari berbagai platform dan pusat untuk memuat modul.
-Sebagai komponen terakhir, GTK menggunakan perpustakaan Pango untuk output teks internasionalisasi.
-Tutorial ini menjelaskan antarmuka Python untuk GTK + dan didasarkan pada GTK + 2.0 Tutorial ditulis
-oleh Tony Gale dan Ian Main. Tutorial ini mencoba untuk mendokumentasikan sebanyak mungkin dari PyGTK, tetapi
-tidak berarti lengkap.
+Dalam versi 2.0, GLib telah mengambil sistem tipe yang membentuk landasan untuk kelas hierarki GTK ini, sistem sinyal yang 
+digunakan di seluruh GTK, API benang yang abstrak yang berbeda benang API asli dari berbagai platform dan pusat untuk 
+memuat modul. Sebagai komponen terakhir, GTK menggunakan perpustakaan Pango untuk output teks internasionalisasi.
+Tutorial ini menjelaskan antarmuka Python untuk GTK + dan didasarkan pada GTK + 2.0. Tutorial ditulis
+oleh Tony Gale dan Ian Main. Tutorial ini mencoba mendokumentasikan sebanyak mungkin PyGTK, tetapi tidak berarti lengkap.
 
 Tutorial ini mengasumsikan beberapa pemahaman tentang Python, dan bagaimana membuat dan menjalankan program Python.
 Jika Anda tidak akrab dengan Python, silakan baca Tutorial Python pertama. Tutorial ini tidak bertanggung
-pemahaman tentang GTK, jika Anda belajar PyGTK untuk belajar GTK, silakan komentar pada bagaimana Anda menemukan
-tutorial ini, dan apa yang Anda mengalami kesulitan dengan. Tutorial ini tidak menjelaskan bagaimana untuk mengkompilasi atau menginstal
-Python, GTK + atau PyGTK.
+pemahaman tentang GTK. Jika Anda belajar PyGTK untuk belajar GTK, silakan komentar pada bagaimana Anda menemukan
+tutorial ini, dan apa kesulitan Anda. Tutorial ini tidak menjelaskan bagaimana untuk mengkompilasi atau menginstal
+Python, GTK +, atau PyGTK.
 
 Tutorial ini didasarkan pada:
 
